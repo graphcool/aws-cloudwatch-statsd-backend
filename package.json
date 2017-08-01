@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/camitz/aws-cloudwatch-statsd-backend.git"
+    "url": "https://github.com/graphcool/aws-cloudwatch-statsd-backend"
   },
   "keywords": [
     "statsd",
@@ -23,5 +23,5 @@
     "amazon",
     "cloudwatchappender"
   ], 
-  "license": {"type": "MIT", "url": "https://github.com/camitz/aws-cloudwatch-statsd-backend/blob/master/LICENSE.md"}
+  "license": {"type": "MIT", "url": "https://github.com/graphcool/aws-cloudwatch-statsd-backend/blob/master/LICENSE.md"}
 }
