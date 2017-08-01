@@ -2,7 +2,7 @@
   "author": "Martin Camitz<martin.camitz@simpletask.se>",
   "description": "A backend for StatsD to emit stats to Amazon's AWS CloudWatch.",
   "name": "aws-cloudwatch-statsd-backend",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "main": "lib/aws-cloudwatch-statsd-backend.js",
   "dependencies": {
     "aws-sdk": "~2.82"
