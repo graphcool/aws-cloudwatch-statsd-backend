@@ -1,5 +1,12 @@
 # StatsD backend for AWS CloudWatch
 
+## What differentiates this fork?
+This version is tailored to work better with docker by:
+- Offering the possibility to configure the AWS via env vars instead. Before, you'd have to bake the config with hardcoded AWS credentials into the image. Now you just inject the env vars during (docker) deployment - multiple regions made easy.
+- Tracking metrics from docker containers is tricky, as they move around a lot. Multiple containers of the same service might be on the same machine. Yet metrics over time, like gauges, would be overridden when 2 instances write to the same gauge. This version offers to identify a service container by 2 dimensions: AWS instance index and a computed container index. 
+
+(WIP)
+
 ## Overview
 
 [StatsD](https://github.com/etsy/statsd) is a smart Node.js package that collects and aggregates statistics from differents apps sent over the UDP protocol. At a set time interval it forwards the aggregated data to a configured backend. It is pluggable with several backends available, the most popular being [Graphite](https://github.com/graphite-project/graphite-web), a python/django monitoring tool.
